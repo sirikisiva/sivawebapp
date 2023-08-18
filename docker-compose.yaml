@@ -1,0 +1,10 @@
+version: '3.8'
+services: #app components like UI,logs,DB...
+  siva-ui-service:
+    image: siva-webui:version$BUILD_NUMBER
+    build: 
+      context: . #loction of dockerfile
+      dockerfile: Dockerfile
+    container_name: siva-web-c1 #name of container
+    ports:
+      - 4477:80 # you can use 1024-5000 range
