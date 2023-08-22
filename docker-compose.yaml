@@ -5,6 +5,6 @@ services: #app components like UI,logs,DB...
     build: 
       context: . #loction of dockerfile
       dockerfile: Dockerfile
-    container_name: siva-web-c1 #name of container
+    container_name: siva-web-c2 #name of container
     ports:
-      - 4477:80 # you can use 1024-5000 range
+      - 4747:80 # you can use 1024-5000 range
