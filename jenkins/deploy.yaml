@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: siva-dep1
+  name: siva-dep1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: siva-dep1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: siva-dep1
+    spec:
+      containers:
+      - image: sirikisivakrishna/siva-webui-cloud4c:version22
+        name: siva-webui-cloud4c
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
