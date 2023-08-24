@@ -18,7 +18,7 @@ spec:
         app: siva-dep1
     spec:
       containers:
-      - image: sirikisivakrishna/siva-webui-cloud4c:version22
+      - image: sirikisivakrishna/siva-webui-cloud4c:version21
         name: siva-webui-cloud4c
         ports:
         - containerPort: 80
