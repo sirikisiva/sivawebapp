@@ -4,7 +4,8 @@ metadata:
   creationTimestamp: null
   labels:
     app: siva-dep1
-  name: siva-dep1
+  name: siva-dep1 # change name of deployment
+  namespace: siva-space # add your namespace info 
 spec:
   replicas: 1
   selector:
@@ -18,7 +19,7 @@ spec:
         app: siva-dep1
     spec:
       containers:
-      - image: sirikisivakrishna/siva-webui-cloud4c:version21
+      - image: sirikisivakrishna/siva-webui-cloud4c:version21 # change image to your docker hub image
         name: siva-webui-cloud4c
         ports:
         - containerPort: 80
