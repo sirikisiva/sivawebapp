@@ -1,9 +1,9 @@
 pipeline {
   agent {
-    label 'main'
+    label 'mymaster'
   }
   environment {
-    USER = 'siva'
+    USER = 'ashutoshh'
     DB  = 'mydata'
   }
   stages {
